@@ -375,7 +375,7 @@ for k in range(len(time_error)):
         # Output
         opt_order, opt_length  = brutal_force_opt(table,requests,0)
         last_opt = Last_opt(table_sort,n,max(predict[i][2] for i in range(n)))
-        smart_opt = Smartstart(table_sort,n,2)
+        smart_opt = Smartstart(table_sort,n,2) # 2 is best thata value of Smartstart under the optimal offline route 
         print("The length of the optimal route is " + str(opt_length))
         print("By Model 2 with opt : " + str(last_opt))
         print("the ratio is : " + str(last_opt/opt_length))
