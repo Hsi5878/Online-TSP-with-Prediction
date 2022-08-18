@@ -532,7 +532,7 @@ for k in range(len(time_error)):
         approx_order, approx_length = approx(table_off,requests)
         approx_length = offline_compute(table, approx_order)
         last_approx = Last_approx(table_sort,n,max(predict[i][2] for i in range(n)))
-        smart_approx = Smartstart_approx(table_sort,n,(1+(13)**(1/2)) /2)
+        smart_approx = Smartstart_approx(table_sort,n,(1+(13)**(1/2)) /2) #  (1+(13)**(1/2)) /2 is best thata value of Smartstart wuth offline route designed by Christofides 
         print("The length of the approx route is " + str(approx_length))     
         print("By Model 2 with christofides : " + str(last_approx))
         print("the ratio is : " + str(last_approx/approx_length))
