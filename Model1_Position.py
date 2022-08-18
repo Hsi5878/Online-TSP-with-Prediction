@@ -294,7 +294,7 @@ for k in range(len(pos_error)):
         # Output
         opt_order, opt_length  = brutal_force_opt(table,requests,0)
         trust_order, trust_length = Trust(table, predict, n)
-        smart_opt = Smartstart(table_sort, n, 2)
+        smart_opt = Smartstart(table_sort, n, 2)# 2 is best thata value of Smartstart under the optimal offline route 
         print("The length of the optimal route is " + str(opt_length))    
         print("By ALG Trust : " + str(trust_length))       
         model_1 = ID(table,predict,n)
